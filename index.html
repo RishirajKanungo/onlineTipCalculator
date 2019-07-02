@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <title>Tip Calculator</title>
+
+<!--center the page-->
+<center>
+
+  <body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+    <div class="topword">
+      <p>Tip Calculator</p>
+    </div>
+
+    <div class="number_input">
+      <!-- input number box -->
+      <input type="number" id="price" placeholder="0.00"step=".01" min="0.00">
+      <span class="help-text"></span>
+    </div>
+
+    <p>Click the desired button for that percentage tip.</p>
+
+    <div class="buttons">
+      <!--set of buttons for usual tip amounts -->
+      <button class="button1" onclick="fivePercent()">5%</button>
+
+      <button class="button2" onclick="tenPercent()">10%</button>
+
+      <button class="button3" onclick="twentyPercent()">20%</button>
+    </div>
+
+    <!-- location where result information is posted
+    placed below the buttons  -->
+    <p id="tip"></p>
+    <p id="result"></p>
+
+</center>
+
+    <!-- referring file for scripts -->
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
